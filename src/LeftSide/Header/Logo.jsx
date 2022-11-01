@@ -1,10 +1,29 @@
 import React from "react";
 
 class Logo extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            redRadiusValue: 0,
+        }
+    }
+
+    redElectricityHover() {
+        this.setState({
+            redRadiusValue: 6,
+        })
+    }
+
+    redElectricityHide() {
+        this.setState({
+            redRadiusValue: 0,
+        })
+    }
+
     render() {
-        return <svg width="290px" height="170px">
+        return <svg width="150px" height="100px" onMouseEnter={this.redElectricityHover.bind(this)} onMouseLeave={this.redElectricityHide.bind(this)}>
                     <defs>
-                        <text id="text" x="50%" y="70%" font-family="Voltaire" font-size="70px" font-weight="800" text-anchor="middle" alignment-baseline="middle">
+                        <text id="text" x="50%" y="50%" font-family="Voltaire" font-size="70px" font-weight="800" text-anchor="middle" alignment-baseline="middle">
                             雷遁
                         </text>
                     </defs>
@@ -20,7 +39,7 @@ class Logo extends React.Component {
                         <animate attributeType="XML" attributeName="seed" from="2" to="120" dur="12s" repeatCount="indefinite"/>
                         </feTurbulence>
                         <feMorphology id="morph1" in="SourceGraphic" operator="dilate" radius="1.5" result="morph1" />
-                        <feMorphology id="morph2" in="morph1" operator="dilate" radius="6" result="morph2" />
+                        <feMorphology id="morph2" in="morph1" operator="dilate" radius={this.state.redRadiusValue} result="morph2" />
                         <feComposite operator="out" in="morph2" in2="morph1" result="strokeText"/>
                         <feDisplacementMap 
                                     xChannelSelector="R" 

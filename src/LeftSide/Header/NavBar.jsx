@@ -4,7 +4,7 @@ class NavBar extends React.Component{
     render() {
         return <nav>
                     <ul className="nav-list">
-                        <li>Home</li>
+                        <li><a href="#Home">Home</a></li>
                         <li>About me</li>
                         <li>Portfolio</li>
                         <li>Contact me</li>
