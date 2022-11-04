@@ -1,5 +1,5 @@
 import React from "react";
-import Thunder from "../img/thunder.png"
+import Thunder from "./thunder.png"
 
 class ThunderBackground extends React.Component {
     render() {

@@ -1,16 +1,22 @@
 import React from 'react'
-import LeftSide from './LeftSide/LeftSide'
-import RightSide from './RightSide/RightSide'
-import ThunderBackground from './ThunderBackground/ThunderBackground'
+import { Route, Routes } from 'react-router'
+import AboutMe from './AboutMe/AboutMe'
+import ContactMe from './ContactMe/ContactMe'
+import Home from './Home/Home'
+import Portfolio from './Portfolio/Portfolio'
+
 
 export default function App() {
     return (
         <>
-        <LeftSide/>
-        <RightSide/>
-        <div className='ThunderBackground'>
-        <ThunderBackground/>
-        </div>
+        {/* <Home/> */}
+    {/* Defines routes */}
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/AboutMe" element={<AboutMe/>}/>
+            <Route path="/Portfolio" element={<Portfolio/>}/>
+            <Route path="/ContactMe" element={<ContactMe/>}/>
+        </Routes>
         </>
     )
 }

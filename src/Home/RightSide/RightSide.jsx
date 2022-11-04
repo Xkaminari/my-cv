@@ -1,5 +1,5 @@
 import React from "react";
-import MainImg from '../img/Med-Yassine-Smiling.webp';
+import MainImg from './MedYassineSmiling.webp';
 
 class RightSide extends React.Component {
     render() {

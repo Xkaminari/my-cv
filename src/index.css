@@ -27,8 +27,8 @@
 
 html {
     background-color: black;
-    overflow-x: hidden;
-}
+    overflow: hidden;
+} 
 
 #root {
     display: flex;
@@ -159,11 +159,11 @@ h1 {
 }
 
 .Slogan {
-    text-shadow: 2px 2px 2px #ffffff;
+    text-shadow: 5px 2px 4px rgba(100,100,100,0.36);
     color: #ea1009;
-    font-family: Poppins-regular;
+    font-family: Poppins-bold;
     font-size: 2.5em;
-    margin: 20px 0 0 200px;
+    margin: 20px 0 0 500px;
 }
 
 .HomeContent {
@@ -291,5 +291,6 @@ h1 {
 }
 
 .Main-img {
+    box-shadow: 8px 10px 100px #ea1009;
     height: 100vh;
 }
