@@ -1,6 +1,8 @@
 :root {
     --red: #EA1009;
+    --LightRed: #ff4741b4;
     --white: #FFFFFF;
+    --LightWhite: rgba( 255, 255, 255, 0.10 );
 }
 
 @font-face {
@@ -16,22 +18,6 @@
 @font-face {
     font-family: Poppins-bold;
     src: url(../public/Fonts/Poppins/Poppins-Bold.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    font-family: Poppins-regular;
-}
-
-html {
-    background-color: black;
-    overflow: hidden;
-} 
-
-#root {
-    display: flex;
 }
 
 @keyframes thunderFlash {
@@ -50,77 +36,149 @@ html {
     100%{opacity: 0;}
 }
 
-.ThunderBackground {
-    position: absolute;
-    z-index: -1;
+@keyframes Btn-animation {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(5px);}
+    20%{transform: translateX(-5px);}
+    30%{transform: translateX(5px);}
+    40%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    60%{transform: translateX(-5px);}
+    70%{transform: translateX(5px);}
+    80%{transform: translateX(-5px);}
+    90%{transform: translateX(5px);}
+    100%{transform: translateX(0px);}
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: Poppins-regular;
+}
+
+html {
+    background-color: black;
+}
+
+#root {
+    position: relative;
+    overflow: hidden;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .thunder {
     position: absolute;
+    z-index: -1;
     filter: contrast(500%);
 }
 
 .thunder1 {
     opacity: 0.3;
-    left: -200px;
-    top: -400px;
-    width: 1800px;
-    height: 1800px;
-    transform: rotate(54.000042deg);
+    left: -250px;
+    top: -125px;
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(18deg);
     animation: thunderFlash 3.1s infinite;
 }
 
 .thunder2 {
     opacity: 0.3;
     position: absolute;
-    left: 965px;
-    top: -500px;
-    width: 1800px;
-    height: 1800px;
-    transform: rotate(-12.00001deg);
+    left: -335px;
+    top: -120px;
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(4deg);
     animation: thunderFlash2 3.1s infinite;
     animation-delay: 2s;
-}
-
-#Home {
-    scroll-margin-bottom: 50px;
 }
 
 .LeftSide {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 65%;
-    height: 100vh;
 }
 
 header {
     width: 100%;
+    height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 100px;
-    height: 25%;
+    justify-content: space-around;
+    column-gap: 50px;
+}
+
+svg #text {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 nav {
-    width: 60%;
+    border: 2px solid var(--red);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-btn {
+    margin: 5px 0 0 0;
+    background: #00000000;
+    font-size: 50px;
+    border: none;
+    z-index: 5;
 }
 
 .nav-list {
-    display: flex;
-    justify-content: space-around;
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: -10px;
+    z-index: 1;
+    transition: 1s;
+    opacity: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 .nav-list li {
     padding: 25px;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .nav-list li a {
     position: relative;
     text-decoration: none;
+}
+
+.nav-list li a::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .nav-list li a:before {
@@ -141,14 +199,28 @@ nav {
 }
 
 main {
-    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Presentation {
+    margin: 20px auto 0 auto;
+    width: 90vw;
+    padding: 5px;
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
 h1 {
     font-family: Poppins-bold;
-    margin: 50px 0 0 100px;
-    font-size: 3.5em;
-    line-height: 60px;
+    text-align: center;
+}
+
+h1::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .Presentation-span {
@@ -158,23 +230,32 @@ h1 {
     text-shadow: 5px 2px 4px rgba(100,100,100,0.36);
 }
 
-.Slogan {
-    text-shadow: 5px 2px 4px rgba(100,100,100,0.36);
-    color: #ea1009;
-    font-family: Poppins-bold;
-    font-size: 2.5em;
-    margin: 20px 0 0 500px;
+.Presentation-span::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
-.HomeContent {
-    margin-top: 0px;
-    display: flex;
-    height: 100%;
+.Slogan {
+    text-shadow: 5px 2px 4px rgba(100,100,100,0.36);
+    color: var(--red);
+    font-family: Poppins-bold;
+    margin: 0 105px 0 0 ;
+}
+
+.Slogan::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .Kanjis {
+    display: none;
     font-size: 9em;
-    margin: 50px 40px  0 40px;
+    margin: 0 40px;
+}
+
+.Kanjis p::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .Kanjis p {
@@ -183,102 +264,82 @@ h1 {
 }
 
 .CtaAndTeaser {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 40px;
-    width: 75%;
-    height: 60%;
+    position: relative;
 }
 
 .Teaser {
+    margin: 20px auto 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     position: relative;
     transition: 1s;
 }
 
 .img-teaser-container {
-    width: 200px;
-    height: 200px;
+    width: 105px;
+    height: 105px;
     overflow: hidden;
-    box-shadow: 8px 10px 4px #ea1009;
-    margin-right: 50px;
+    border-radius: 15px;
     transition: 0.5s;
+    box-shadow: 0px 0px 30px var(--red);
 }
-
 
 .img-teaser {
     position: relative;
-    top: -20px;
-    left: -10px;
-    width: 210px;
+    top: -10px;
+    width: 105px;
+}
+
+.img-teaser::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .Teaser-details {
     position: relative;
-    height: 200px;
 }
 
 .Teaser-text {
-    font-size: 1.8em;
+    width: 60vw;
+    padding: 10px;
     font-family: Poppins-medium;
-    line-height: 50px;
-    padding: 30px;
     transition: 1s;
-}
-
-.Teaser-text-hover-form {
-    padding: 30px;
-    margin-left: 30px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur(10px);
     border-radius: 10px;
 }
 
-.module-border-wrap {
-    position: absolute;
-    bottom: -25px;
-    left: 450px;
-    width: 175px;
-    height: 70px;
-    padding: 1rem;
-    position: relative;
-    border-radius: 16px;
-    background: linear-gradient(to right, var(--red) 0%, var(--white)400%);
-    padding: 3px;
+.Teaser-text p::selection {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.teaser-btn {
+    left: 18px;
 }
 
 .Btn-type1 {
-    border-radius: 16px;
-    border: none;
-    width: 175px;
-    height: 70px;
-    background: #000000;
+    position: absolute;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 14px;
+    border: 2px solid var(--red);
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur(10px);
     font-family: Poppins-medium;
-    font-size: 2.5em;
+    font-size: 1.5em;
     cursor: pointer;
     transition: 1s;
 }
 
-@keyframes Btn-animation {
-    0%{transform: translateX(0px);}
-    10%{transform: translateX(5px);}
-    20%{transform: translateX(-5px);}
-    30%{transform: translateX(5px);}
-    40%{transform: translateX(-5px);}
-    50%{transform: translateX(5px);}
-    60%{transform: translateX(-5px);}
-    70%{transform: translateX(5px);}
-    80%{transform: translateX(-5px);}
-    90%{transform: translateX(5px);}
-    100%{transform: translateX(0px);}
+.Btn-type1::selection {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .Btn-type1-hover-animation {
-    animation: Btn-animation 3s;
+    animation: Btn-animation 2s infinite;
 }
 
 .module-border-wrap:hover .Btn-type1{
@@ -286,11 +347,50 @@ h1 {
 }
 
 .RightSide {
-    width: 35%;
-    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0 0 0;
+    width: 100%;
+}
+
+.RightSide-text {
+    width: 50vw;
+}
+
+.RightSide-text p {
+    padding: 5px;
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
 .Main-img {
-    box-shadow: 8px 10px 100px #ea1009;
-    height: 100vh;
+    box-shadow: 0 0 20px var(--red);
+    width: 170px;
+    border-radius: 16px;
+}
+
+.Main-img::selection {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.RightSide-btn {
+    left: 30px;
+}
+
+@media screen and (max-width: 375px) {
+    .Presentation {
+        width: 340px;
+    }
+
+    #root {
+        position: absolute;
+        overflow-x: hidden;
+        overflow-y: scroll !important;
+        width: 100vw;
+        height: 100vh;
+    }
 }

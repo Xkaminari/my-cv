@@ -5,7 +5,7 @@ import Main from "./Main/Main";
 
 class LeftSide extends React.Component {
     render() {
-        return <div id="Home" className="LeftSide">
+        return <div className="LeftSide">
             <Header/>
             <Main/>
         </div>

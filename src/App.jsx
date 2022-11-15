@@ -9,7 +9,6 @@ import Portfolio from './Portfolio/Portfolio'
 export default function App() {
     return (
         <>
-        {/* <Home/> */}
     {/* Defines routes */}
         <Routes>
             <Route path="/" element={<Home/>}/>

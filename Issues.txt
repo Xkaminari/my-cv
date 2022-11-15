@@ -1,0 +1,11 @@
+Responsive:
+-finir les format d'ecrant PC
+-fixer le scroll sur quelque mobile
+-mieux gérer les tablette
+-travailler la partie envoie de mail
+-Faire la partie about mieu
+Portfolio {
+    -tp entre les diffrente position a la zenitsu 
+        penser a se voir sur un fond noir
+        penser a régler les future problème de distance
+}

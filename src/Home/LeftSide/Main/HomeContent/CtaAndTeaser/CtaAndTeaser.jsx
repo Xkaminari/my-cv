@@ -18,23 +18,21 @@ class CtaAndTeaser extends React.Component {
     }
 
     render() {
-        return <div className="CtaAndTeaser">
-            <div className="Teaser">
-                <div className="img-teaser-container" onMouseEnter={this.enterTeaser.bind(this)} onMouseLeave={this.leaveTeaser.bind(this)}>
-                <img className="img-teaser" src={TeaserImg} alt="Med Yassine chahboun profile pick" />
-                </div>
-                <div className="Teaser-details">
-                    <div className="Teaser-text">
-                        <p>Need a skilled developper? I'm your man.</p>
-                        <p>In the section below you will learn more </p>
-                        <p>about your future developper.</p>
+        return <div className="CtaAndTeaser" onMouseEnter={this.enterTeaser.bind(this)} onMouseLeave={this.leaveTeaser.bind(this)}>
+                    <div className="Teaser">
+                        <div className="img-teaser-container">
+                        <img className="img-teaser" src={TeaserImg} alt="Med Yassine chahboun profile pick" />
+                        </div>
+                        <div className="Teaser-details">
+                            <div className="Teaser-text">
+                                <p>Need a skilled developper? I'm your man.
+                                    Know more about your future developper
+                                    by clicking on the explore button below.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="module-border-wrap">
-                        <button className="Btn-type1">Explore</button>
-                    </div>
+                    <button className="Btn-type1 teaser-btn">Explore</button>
                 </div>
-            </div>
-        </div>
     }
 }
 

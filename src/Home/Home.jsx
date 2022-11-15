@@ -6,13 +6,13 @@ import ThunderBackground from './ThunderBackground/ThunderBackground'
 export default class Home extends Component {
     render() {
         return (
-            <>
-                <LeftSide/>
-                <RightSide/>
+            <section className='Home'>
                 <div className='ThunderBackground'>
                 <ThunderBackground/>
                 </div>
-            </>
+                <LeftSide/>
+                <RightSide/>
+            </section>
         )
     }
 }

@@ -1,0 +1,156 @@
+@media screen and (min-width: 1024px) {
+
+html {
+    overflow: hidden;
+}
+
+#root {
+    position: inherit;
+}
+
+.ThunderBackground {
+    position: absolute;
+    z-index: -1;
+}
+
+.thunder {
+    position: absolute;
+    filter: contrast(500%);
+}
+
+.thunder1 {
+    opacity: 0.3;
+    left: -200px;
+    top: -500px;
+    width: 1800px;
+    height: 1800px;
+    transform: rotate(54.000042deg);
+    animation: thunderFlash 3.1s infinite;
+}
+
+.thunder2 {
+    opacity: 0.3;
+    position: absolute;
+    left: 965px;
+    top: -500px;
+    width: 1800px;
+    height: 1800px;
+    transform: rotate(-12.00001deg);
+    animation: thunderFlash2 3.1s infinite;
+    animation-delay: 2s;
+}
+
+.LeftSide {
+    width: 60vw;
+    height: 100vh;
+}
+
+.Home {
+    flex-direction: row;
+}
+
+.nav-list li {
+    padding: 25px;
+    font-size: 1.5em;
+}
+
+.Presentation {
+    width: fit-content;
+    margin: 5vh 0 0 5vh;
+    padding: 0 15px;
+}
+
+h1 {
+    display: inline-block;
+    width: 40vw;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.Presentation-span {
+    margin-left: 40px;
+} 
+
+.Slogan {
+    display: inline-block;
+    margin: 0  0 0 300px;
+}
+
+.HomeContent {
+    display: flex;
+    margin-top: 7vh;
+}
+
+.Kanjis {
+    display: block;
+    margin-top: 5vh;
+}
+
+/* .CtaAndTeaser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    width: 75%;
+    height: 60%;
+} */
+
+/* .Teaser {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+} */
+
+/* .img-teaser-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 8px 10px 4px #ea1009;
+    margin-right: 50px;
+    transition: 0.5s;
+} */
+
+/* .img-teaser {
+    position: relative;
+    top: -20px;
+    left: -10px;
+    width: 210px;
+} */
+
+/* .Teaser-details {
+    position: relative;
+    height: 200px;
+} */
+
+.Teaser {
+    width: 50vw;
+}
+
+.Teaser-text {
+    font-family: Poppins-medium;
+    line-height: 50px;
+    padding: 30px;
+    font-size: 1.8em;
+    width: 30vw;
+}
+
+.teaser-btn {
+    font-size: 3em;
+}
+
+.RightSide {
+    margin: 0;
+    width: 40vw;
+}
+
+.Main-img {
+    height: 100vh;
+    width: auto;
+    border-radius: 0px;
+}
+
+.RightSide-text {
+    display: none;
+}
+}
