@@ -3,7 +3,7 @@ Responsive:
 -fixer le scroll sur quelque mobile
 -mieux gérer les tablette
 -travailler la partie envoie de mail
--Faire la partie about mieu
+-Mieux faire la partie about
 Portfolio {
     -tp entre les diffrente position a la zenitsu 
         penser a se voir sur un fond noir
