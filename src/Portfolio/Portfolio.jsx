@@ -4,6 +4,19 @@ import ThunderBackground from '../Home/ThunderBackground/ThunderBackground'
 import './Portfolio.css'
 
 export default class Portfolio extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            iframeLink: "https://xkaminari.github.io/Shivka-project/",
+        }
+    }
+    
+    changeIframeUrl(url) {
+        this.setState({
+            iframeLink: "url",
+        })
+    }
+    
     render() {
         return (
             <div className='portfolio'>
@@ -11,14 +24,18 @@ export default class Portfolio extends Component {
                 <Header/>
                 <div className="portfolio-main">
                     <div className="choose-a-project">
-                        <h2>Choose a project to see</h2>
                         <ul className='list-projects'>
-                            <li>project</li>
-                            <li>project</li>
-                            <li>project</li>
-                            <li>project</li>
-                            <li>project</li>
-                            <li>project</li>
+                            <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Shivka-project/"})}>Shivka</li>
+                            <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Formulaire/"})}>Exemple Form</li>
+                            <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Concours-FS-28---Med-Yassine-Chaboun/"})}>Concours(maquette)</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
                         </ul>
                     </div>
                     <div className='web-site-preview'>
@@ -27,7 +44,7 @@ export default class Portfolio extends Component {
                             <div className='portfolio-green-btn portfolio-btn'></div>
                             <div className='portfolio-yellow-btn portfolio-btn'></div>
                         </div>
-                        <iframe className='preview' src="https://xkaminari.github.io/Shivka-project/"></iframe>
+                        <iframe className='preview' src={this.state.iframeLink}></iframe>
                         <div className="bottom-bar"></div>
                     </div>
                     <div className="Kanjis" id='kanji'>

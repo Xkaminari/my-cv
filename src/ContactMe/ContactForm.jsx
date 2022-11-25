@@ -42,17 +42,13 @@ export default class ContactForm extends Component {
         else if (this.state.name.match(/\d/)) {
             this.errorMsg(nameInput, "A name can not contain digits !", ".errorName");
         }
-        else if (this.state.name.match(/\w/)) {
-            console.log("gijer");
-            this.errorMsg(nameInput, "A name can not contain special characters !", ".errorName");
-        }
         else {
             this.goodAnswer(nameInput, ".errorName");
         }
     }
     
     checkEmailValidity(emailInput) {
-        console.log(this.state.mail);
+        console.log(this.state.mail.includes('@gmail.com'));
         if (this.state.mail.endsWith("@gmail.com")) {
             this.goodAnswer(emailInput, ".errorMail");
         }
@@ -84,7 +80,7 @@ export default class ContactForm extends Component {
             from_subject : this.state.message
         }
         
-        // emailjs.send("service_ldpwky3", "template_j3udeiv", params, "QiZ-9ohyZp-q256fC")
+        emailjs.send("service_ldpwky3", "template_j3udeiv", params, "QiZ-9ohyZp-q256fC")
         
         this.setState({
             name:'',
@@ -112,16 +108,16 @@ export default class ContactForm extends Component {
             <form onSubmit={this.submit.bind(this)} >
                 <div>
                     <label>Name</label>
-                    <input value={this.state.name} onChange={this.handleChage.bind(this)} type="text" id="name"></input>
+                    <input autoComplete='off' value={this.state.name} onChange={this.handleChage.bind(this)} type="text" id="name"></input>
                     <p className='errorName'></p>
                 </div>
                 <div>
                     <label>Email </label>
-                    <input value={this.state.mail} onChange={this.handleChage.bind(this)} type="email" id="mail"></input>
+                    <input autoComplete='off' value={this.state.mail} onChange={this.handleChage.bind(this)} type="email" id="mail"></input>
                     <p className='errorMail'></p>
                 </div>
                 <div>
-                    <label htmlFor="floatingTextarea">Comments</label>
+                    <label htmlFor="floatingTextarea">Message</label>
                     <textarea className="form-control" placeholder="Leave a comment here" id="message" value={this.state.message} onChange={this.handleChage.bind(this)}></textarea>
                 </div>
                 <button id='form-btn'>Send</button>
