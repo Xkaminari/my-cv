@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TeaserImg from "../Med-Yassine's-Profil-pick.webp"
 
 
@@ -31,7 +32,7 @@ class CtaAndTeaser extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <button className="Btn-type1 teaser-btn">Explore</button>
+                    <Link to="/AboutMe"><button className="Btn-type1 teaser-btn">Explore</button></Link>
                 </div>
     }
 }
