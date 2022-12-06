@@ -6,7 +6,7 @@ export default class Portfolio extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            iframeLink: "https://xkaminari.github.io/Shivka-project/",
+            iframeLink: "",
         }
     }
     
@@ -22,12 +22,10 @@ export default class Portfolio extends Component {
                 <Header/>
                 <div className="portfolio-main">
                     <div className="choose-a-project">
+                        <h2 className='choose-project-title'>Select a project to see</h2>
                         <ul className='list-projects'>
-                            <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Shivka-project/"})}>Shivka</li>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Formulaire/"})}>Exemple Form</li>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Concours-FS-28---Med-Yassine-Chaboun/"})}>Concours(maquette)</li>
-                            <li>Empty</li>
-                            <li>Empty</li>
                             <li>Empty</li>
                             <li>Empty</li>
                             <li>Empty</li>
@@ -44,10 +42,6 @@ export default class Portfolio extends Component {
                         </div>
                         <iframe className='preview' src={this.state.iframeLink}></iframe>
                         <div className="bottom-bar"></div>
-                    </div>
-                    <div className="Kanjis" id='kanji'>
-                        <p>雷</p>
-                        <p>遁</p>
                     </div>
                 </div>
             </div>

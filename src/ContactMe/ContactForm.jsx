@@ -32,7 +32,7 @@ export default class ContactForm extends Component {
         let p = document.querySelector(pId);
         p.style.color = "#FFFFFF";
         p.innerText = "";
-        theInput.style.backgroundColor = "var(--LightWhite)";
+        theInput.style.backgroundColor = "rgba(12,11,11,0.75)";
     }
     
     checkNameValidity(nameInput) {
@@ -100,8 +100,8 @@ export default class ContactForm extends Component {
         <>
         <Toaster/>
         <div className='Contact-me-form'>
-            <h2>Contact Me</h2>
             <form onSubmit={this.submit.bind(this)} >
+                <h2 className='contactMe-tiltle'>Contact Me</h2>
                 <div>
                     <label>Name</label>
                     <input autoComplete='off' value={this.state.name} onChange={this.handleChage.bind(this)} type="text" id="name"></input>

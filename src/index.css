@@ -23,7 +23,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #050505;
     font-family: Poppins-regular;
 }
 
@@ -41,7 +41,6 @@ html {
     flex-direction: column;
     height: 100vh;
     background-color: #fff6f0;
-    /* background-color: #000000; */
 }
 
 .LeftSide {

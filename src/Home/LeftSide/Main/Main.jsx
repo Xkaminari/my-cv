@@ -6,7 +6,7 @@ class Main extends React.Component {
     render() {
         return <main>
             <h1 className="Presentation">I'm Med Yassine chahboun<span className="Presentation-span">Your full-stack Developper</span>
-                <p className="Slogan">And a futur expert</p>
+                <p className="Slogan">And future expert</p>
             </h1>
             <div className="HomeContent">
                 <div className="Teaser">
