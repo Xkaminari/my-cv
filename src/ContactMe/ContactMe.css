@@ -3,7 +3,10 @@
     --white: #FFFFFF;
 }
 
-
+#root {
+    background-color: #fff6f0;
+    height: 100vh;
+}
 
 h2 {
     text-align: center;

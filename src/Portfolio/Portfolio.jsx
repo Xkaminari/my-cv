@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Header from '../Home/LeftSide/Header/Header'
-import ThunderBackground from '../Home/ThunderBackground/ThunderBackground'
 import './Portfolio.css'
 
 export default class Portfolio extends Component {
@@ -20,7 +19,6 @@ export default class Portfolio extends Component {
     render() {
         return (
             <div className='portfolio'>
-                <ThunderBackground/>
                 <Header/>
                 <div className="portfolio-main">
                     <div className="choose-a-project">

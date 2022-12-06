@@ -15,6 +15,7 @@
 }
 
 .portfolio {
+    background-color: #fff6f0;
     height: 100vh;
     display: flex;
     flex-direction: column;

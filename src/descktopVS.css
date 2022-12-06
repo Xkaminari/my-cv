@@ -45,6 +45,10 @@ html {
     height: 100vh;
 }
 
+main {
+    margin: 0 0 0 50px;
+}
+
 .Home {
     flex-direction: row;
 }
@@ -56,7 +60,7 @@ html {
 
 .Presentation {
     width: fit-content;
-    margin: 5vh 0 0 5vh;
+    margin: 10vh 0 0 5vh;
     padding: 0 15px;
 }
 
@@ -78,50 +82,9 @@ h1 {
 
 .HomeContent {
     display: flex;
+    align-items: center;
     margin-top: 7vh;
 }
-
-.Kanjis {
-    display: block;
-    margin-top: 5vh;
-}
-
-/* .CtaAndTeaser {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 40px;
-    width: 75%;
-    height: 60%;
-} */
-
-/* .Teaser {
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: 1s;
-} */
-
-/* .img-teaser-container {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    box-shadow: 8px 10px 4px #ea1009;
-    margin-right: 50px;
-    transition: 0.5s;
-} */
-
-/* .img-teaser {
-    position: relative;
-    top: -20px;
-    left: -10px;
-    width: 210px;
-} */
-
-/* .Teaser-details {
-    position: relative;
-    height: 200px;
-} */
 
 .Teaser {
     width: 50vw;
@@ -136,7 +99,9 @@ h1 {
 }
 
 .teaser-btn {
-    font-size: 3em;
+    font-size: 2.8em;
+    width: 170px;
+    text-decoration: none;
 }
 
 .RightSide {

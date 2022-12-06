@@ -5,6 +5,7 @@
 
 .About-me {
     display: flex;
+    background-color: #fff6f0;
 }
 
 .Abm-RightSide {
@@ -29,10 +30,7 @@
 .my-history {
     width: 80%;
     padding: 20px;
-    border-radius: 16px;
     height: fit-content;
-    background: rgba( 255, 255, 255, 0.10 );
-    backdrop-filter: blur(10px);
 }
 
 .my-history p {
@@ -47,4 +45,15 @@
 #Abm-btn {
     position: inherit;
     margin-top: 60px;
+    text-decoration: none;
+    position: relative;
+}
+
+.Abm-btn-text {
+    z-index: 1;
+    transition: 0.8s ease-in-out;
+}
+
+.Btn-type1:hover .Abm-btn-text{
+    color: var(--white);
 }

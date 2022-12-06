@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Home/LeftSide/Header/Header";
-import ThunderBackground from "../Home/ThunderBackground/ThunderBackground";
-import MedYassinePick from "../Home/LeftSide/Main/HomeContent/Med-Yassine's-Profil-pick.webp";
+import MedYassinePick from "../Home/LeftSide/Main/Med-Yassine's-Profil-pick.webp";
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,6 @@ export default class AboutMe extends Component {
     render() {
     return (
             <>
-                <ThunderBackground />
                 <div className="About-me">
                     <div className="Abm-RightSide">
                         <img
@@ -58,7 +56,7 @@ export default class AboutMe extends Component {
                                 donc rejoindre mon aventure.
                             </p>
                         </div>
-                        <Link to="/Portfolio"><button className="Btn-type1" id="Abm-btn">Voir mon travaille</button></Link>
+                        <Link to="/Portfolio" className="Btn-type1" id="Abm-btn"><span className="Abm-btn-text">Discover</span><div className="Baground-btn"></div></Link>
                     </div>
                 </div>
             </>

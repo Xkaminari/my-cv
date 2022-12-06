@@ -13,10 +13,6 @@
         transform: rotate(17deg);
     }
     
-    /* .LeftSide {
-        row-gap: 20px;
-    } */
-    
     nav {
         display: none;
     }
@@ -67,11 +63,6 @@
     
     .Teaser-text {
         font-size: 1.2em;
-    }
-    
-    .teaser-btn {
-        left: 290px;
-        bottom: -25px;
     }
     
     .RightSide {

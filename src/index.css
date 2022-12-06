@@ -20,41 +20,10 @@
     src: url(../public/Fonts/Poppins/Poppins-Bold.ttf);
 }
 
-@keyframes thunderFlash {
-    0%{opacity: 0;}
-    3.22%{opacity: 1;}
-    5%{opacity: 0.5;}
-    10%{opacity: 0.8;}
-    100%{opacity: 0;}
-}
-
-@keyframes thunderFlash2 {
-    0%{opacity: 0;}
-    3.22%{opacity: 1;}
-    5%{opacity: 0.5;}
-    10%{opacity: 0.8;}
-    100%{opacity: 0;}
-}
-
-@keyframes Btn-animation {
-    0%{transform: translateX(0px);}
-    10%{transform: translateX(5px);}
-    20%{transform: translateX(-5px);}
-    30%{transform: translateX(5px);}
-    40%{transform: translateX(-5px);}
-    50%{transform: translateX(5px);}
-    60%{transform: translateX(-5px);}
-    70%{transform: translateX(5px);}
-    80%{transform: translateX(-5px);}
-    90%{transform: translateX(5px);}
-    100%{transform: translateX(0px);}
-}
-
-
 * {
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+    color: #000000;
     font-family: Poppins-regular;
 }
 
@@ -71,34 +40,8 @@ html {
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
-
-.thunder {
-    position: absolute;
-    z-index: -1;
-    filter: contrast(500%);
-}
-
-.thunder1 {
-    opacity: 0.3;
-    left: -250px;
-    top: -125px;
-    width: 1000px;
-    height: 1000px;
-    transform: rotate(18deg);
-    animation: thunderFlash 3.1s infinite;
-}
-
-.thunder2 {
-    opacity: 0.3;
-    position: absolute;
-    left: -335px;
-    top: -120px;
-    width: 1000px;
-    height: 1000px;
-    transform: rotate(4deg);
-    animation: thunderFlash2 3.1s infinite;
-    animation-delay: 2s;
+    background-color: #fff6f0;
+    /* background-color: #000000; */
 }
 
 .LeftSide {
@@ -116,12 +59,9 @@ header {
     column-gap: 50px;
 }
 
-svg #text {
-    cursor: default;
-    --webkit-user-select: none;
-    --moz-user-select: none;
-    --ms-user-select: none;
-    user-select: none;
+.Logo {
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
 nav {
@@ -188,7 +128,7 @@ nav {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: var(--white);
+    background-color: #000000;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -207,10 +147,6 @@ main {
 .Presentation {
     margin: 20px auto 0 auto;
     width: 90vw;
-    padding: 5px;
-    background: rgba( 255, 255, 255, 0.10 );
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
 }
 
 h1 {
@@ -247,12 +183,6 @@ h1::selection {
     color: var(--white);
 }
 
-.Kanjis {
-    display: none;
-    font-size: 9em;
-    margin: 0 40px;
-}
-
 .Kanjis p::selection {
     background-color: var(--red);
     color: var(--white);
@@ -261,10 +191,6 @@ h1::selection {
 .Kanjis p {
     font-family: SimSun;
     line-height: 175px;
-}
-
-.CtaAndTeaser {
-    position: relative;
 }
 
 .Teaser {
@@ -304,10 +230,6 @@ h1::selection {
     width: 60vw;
     padding: 10px;
     font-family: Poppins-medium;
-    transition: 1s;
-    background: rgba( 255, 255, 255, 0.10 );
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
 }
 
 .Teaser-text p::selection {
@@ -315,22 +237,43 @@ h1::selection {
     color: var(--white);
 }
 
-.teaser-btn {
-    left: 18px;
-}
-
 .Btn-type1 {
-    position: absolute;
-    margin-top: 10px;
-    padding: 5px 10px;
+    display: flex;
+    background-color: #fff6f0;
+    padding: 5px 15px;
     border-radius: 14px;
     border: 2px solid var(--red);
-    background: rgba( 255, 255, 255, 0.10 );
-    backdrop-filter: blur(10px);
     font-family: Poppins-medium;
     font-size: 1.5em;
     cursor: pointer;
     transition: 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.teaser-btn-text {
+    z-index: 1;
+    transition: 0.8s ease-in-out;
+}
+
+.Baground-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #00000000;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.8s ease-in-out;
+    filter: blur(10px);
+}
+
+.Btn-type1:hover .teaser-btn-text{
+    color: var(--white);
+}
+
+.Btn-type1:hover .Baground-btn {
+    transform: scale(4);
+    background-color: var(--red);
 }
 
 .Btn-type1::selection {
