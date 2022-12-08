@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../Home/LeftSide/Header/Header";
 import MedYassinePick from "../Home/LeftSide/Main/Med-Yassine's-Profil-pick.webp";
 import "./AboutMe.css";
+import "./AboutMeMobileVS.css";
 import { Link } from "react-router-dom";
 
 export default class AboutMe extends Component {

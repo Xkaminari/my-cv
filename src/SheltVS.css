@@ -1,18 +1,4 @@
 @media screen and (min-width: 600px) {
-    .thunder1 {
-        left: -390px;
-        width: 1115px;
-        height: 1115px;
-    }
-    
-    .thunder2 {
-        top: -135px;
-        left: 21px;
-        width: 1115px;
-        height: 1115px;
-        transform: rotate(17deg);
-    }
-    
     nav {
         display: none;
     }
@@ -70,22 +56,9 @@
     }
     
     .Main-img {
+        display: block;
         width: 200px;
-    }
-    
-    .RightSide-text {
-        width: 60vw;
-        margin-bottom: 80px;
-    }
-    
-    .RightSide-text p {
-        font-size: 1.3em;
-    }
-    
-    .RightSide-btn {
-        bottom: 50px;
-        left: 130px;
-    }
+    }   
     
     .Btn-type1 {
         font-size: 2em;

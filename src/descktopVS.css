@@ -8,45 +8,19 @@ html {
     position: inherit;
 }
 
-.ThunderBackground {
-    position: absolute;
-    z-index: -1;
-}
-
-.thunder {
-    position: absolute;
-    filter: contrast(500%);
-}
-
-.thunder1 {
-    opacity: 0.3;
-    left: -200px;
-    top: -500px;
-    width: 1800px;
-    height: 1800px;
-    transform: rotate(54.000042deg);
-    animation: thunderFlash 3.1s infinite;
-}
-
-.thunder2 {
-    opacity: 0.3;
-    position: absolute;
-    left: 965px;
-    top: -500px;
-    width: 1800px;
-    height: 1800px;
-    transform: rotate(-12.00001deg);
-    animation: thunderFlash2 3.1s infinite;
-    animation-delay: 2s;
-}
-
 .LeftSide {
     width: 60vw;
     height: 100vh;
 }
 
+header {
+    width: 110%;
+}
+
 main {
     margin: 0 0 0 50px;
+    height: 80vh;
+    justify-content: space-around;
 }
 
 .Home {
@@ -54,13 +28,14 @@ main {
 }
 
 .nav-list li {
-    padding: 25px;
+    /* padding: 25px; */
     font-size: 1.5em;
 }
 
 .Presentation {
     width: fit-content;
-    margin: 10vh 0 0 5vh;
+    /* modified */
+    margin: 5vh 0 0 5vh;
     padding: 0 15px;
 }
 
@@ -83,11 +58,13 @@ h1 {
 .HomeContent {
     display: flex;
     align-items: center;
-    margin-top: 7vh;
+    /* margin-top: 7vh; */
 }
 
 .Teaser {
     width: 50vw;
+    flex-direction: row;
+    row-gap: 0px;
 }
 
 .Teaser-text {
@@ -96,12 +73,16 @@ h1 {
     padding: 30px;
     font-size: 1.8em;
     width: 30vw;
+    text-align: justify;
 }
 
 .teaser-btn {
-    font-size: 2.8em;
+    font-size: 1.8em;
     width: 170px;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
 }
 
 .RightSide {
@@ -110,12 +91,10 @@ h1 {
 }
 
 .Main-img {
+    display: block;
     height: 100vh;
     width: auto;
     border-radius: 0px;
 }
 
-.RightSide-text {
-    display: none;
-}
 }
