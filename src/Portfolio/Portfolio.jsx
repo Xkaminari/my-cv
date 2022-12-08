@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../Home/LeftSide/Header/Header'
 import './Portfolio.css'
+import './PortfolioMobileVS.css'
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -21,11 +22,24 @@ export default class Portfolio extends Component {
             <div className='portfolio'>
                 <Header/>
                 <div className="portfolio-main">
-                    <div className="choose-a-project">
+                    <div className="choose-a-project choose-a-project-descktopVS">
                         <h2 className='choose-project-title'>Select a project to see</h2>
                         <ul className='list-projects'>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Formulaire/"})}>Exemple Form</li>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Concours-FS-28---Med-Yassine-Chaboun/"})}>Concours(maquette)</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                            <li>Empty</li>
+                        </ul>
+                    </div>
+                    <div className="choose-a-project choose-a-project-mobileVS">
+                        <h2 className='choose-project-title'>Select a project to see</h2>
+                        <ul className='list-projects'>
+                            <li><a href="https://xkaminari.github.io/Formulaire/">Exemple Form</a></li>
+                            <li><a href="https://xkaminari.github.io/Concours-FS-28---Med-Yassine-Chaboun/">Concours(maquette)</a></li>
                             <li>Empty</li>
                             <li>Empty</li>
                             <li>Empty</li>

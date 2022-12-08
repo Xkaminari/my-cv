@@ -1,20 +1,41 @@
 @media screen and (max-width: 480px) {
     .About-me {
         flex-direction: column-reverse;
-        row-gap: 150px;
+        row-gap: 25px;
     }
-    /* .Abm-container {
-    } */
+    
     .Abm-RightSide {
         width: 100vw;
     }
-    .Abm-LeftSide {
-        width: 100vw;
+    
+    .Abm-container {
+        display: block;
     }
+    
+    .Abm-LeftSide {
+        width: 99vw;
+        height: 100%;
+    }
+    
+    .Abm-LeftSide header {
+        width: 90%;
+    }
+    
     .my-history {
         width: 90%;
     }
+    
+    .my-history p {
+        margin-bottom: 0px;
+    }
+    
+    .Abm-container a {
+        margin-top: 0px;
+    }
+    
     .About-me-main-img {
-        height: 20vh;
+        height: 50vh;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
 }

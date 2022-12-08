@@ -28,7 +28,7 @@ export default class AboutMe extends Component {
                                     we could colaborate!
                                 </p>
                             </div>
-                            <Link to="/Portfolio" className="Btn-type1" id="Abm-btn"><span className="Abm-btn-text">Discover</span><div className="Baground-btn"></div></Link>
+                            <Link to="/Portfolio" className="Btn-type1" id="Abm-btn"><span className="Abm-btn-text">Projects</span><div className="Baground-btn"></div></Link>
                         </div>
                     </div>
                 </div>

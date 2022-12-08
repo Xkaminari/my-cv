@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px) {
+    .Contact-me-content {
+        flex-direction: column;
+    }
+    .Contact-me-form {
+        width: 100vw;
+    }
+    .links-section {
+        width: 100vw;
+    }
+    .links-list li {
+        font-size: 1.4em;
+    }
+    textarea {
+        width: 100%;
+    }
+    #form-btn {
+        margin-left: 22px;
+    }
+}

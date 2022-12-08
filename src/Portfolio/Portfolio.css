@@ -40,7 +40,6 @@
     width: 60vw;
     grid-column: 2;
     grid-row: 1 / span 4;
-    /* margin-left: 170px; */
 }
 
 .top-bar {
@@ -98,6 +97,15 @@
     width: 20vw;
     height: 60vh;
     overflow-y: scroll;
+}
+
+.choose-a-project-mobileVS {
+    display: none;
+}
+
+.choose-a-project-mobileVS a {
+    text-decoration: none;
+    color: #fff6f0;
 }
 
 .choose-project-title {

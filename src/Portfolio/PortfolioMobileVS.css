@@ -1,0 +1,25 @@
+@media screen and (max-width: 480px) {
+    .web-site-preview {
+        display: none;
+    }
+    
+    .portfolio-main {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .choose-a-project {
+        margin-left: 10px;
+        grid-column: 1 / span 3;
+        width: 90vw;
+    }
+    
+    .choose-a-project-descktopVS {
+        display: none;
+    }
+    
+    .choose-a-project-mobileVS {
+        display: block;
+    }
+}
