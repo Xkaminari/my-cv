@@ -112,10 +112,6 @@ export default class ContactForm extends Component {
                     <input autoComplete='off' value={this.state.mail} onChange={this.handleChage.bind(this)} type="email" id="mail"></input>
                     <p className='errorMail'></p>
                 </div>
-                <div>
-                    <label htmlFor="floatingTextarea">Message</label>
-                    <textarea className="form-control" placeholder="Leave a comment here" id="message" value={this.state.message} onChange={this.handleChage.bind(this)}></textarea>
-                </div>
                 <button id='form-btn'>Send</button>
             </form>
         </div>

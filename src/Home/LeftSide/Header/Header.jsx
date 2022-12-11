@@ -23,7 +23,7 @@ class Header extends React.Component {
     }
     render() {
         return <header>
-        <span className='Logo'>Chahboun.</span>
+        <span className='Logo'>Med Yassine.</span>
         <div className="nav-bar">
             <nav>
                 <button className="nav-btn" onClick={this.displayNavList.bind(this)}><i class="fa-solid fa-bars"></i></button>
