@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/my-cv/static/css/main.08e8f4d4.css",
+    "main.js": "/my-cv/static/js/main.2114316f.js",
+    "static/media/MedYassineSmiling.webp": "/my-cv/static/media/MedYassineSmiling.9b6f983784cc06e985b4.webp",
+    "static/media/Med-Yassine's-Profil-pick.webp": "/my-cv/static/media/Med-Yassine's-Profil-pick.023514a516b0c07d1214.webp",
+    "static/media/Poppins-Regular.ttf": "/my-cv/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/my-cv/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-Bold.ttf": "/my-cv/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "index.html": "/my-cv/index.html",
+    "main.08e8f4d4.css.map": "/my-cv/static/css/main.08e8f4d4.css.map",
+    "main.2114316f.js.map": "/my-cv/static/js/main.2114316f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08e8f4d4.css",
+    "static/js/main.2114316f.js"
+  ]
+}
