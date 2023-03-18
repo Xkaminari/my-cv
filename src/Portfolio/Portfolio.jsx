@@ -25,10 +25,10 @@ export default class Portfolio extends Component {
                 <div className="portfolio-main">
                     <div className="choose-a-project">
                         <ul className='list-projects'>
+                            <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/smokey-web-site/"})}>Smokey Burgers</li>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Shivka-project/"})}>Shivka</li>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Formulaire/"})}>Exemple Form</li>
                             <li onClick={() => this.setState({iframeLink:"https://xkaminari.github.io/Concours-FS-28---Med-Yassine-Chaboun/"})}>Concours(maquette)</li>
-                            <li>Empty</li>
                             <li>Empty</li>
                             <li>Empty</li>
                             <li>Empty</li>
